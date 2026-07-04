@@ -6,7 +6,7 @@ api_key = st.secrets["GOOGLE_API_KEY"]
 
 # Gemini کنفیگریشن
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.0-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # ایپ کا انٹرفیس
 st.title("AI Reel Script Generator")
