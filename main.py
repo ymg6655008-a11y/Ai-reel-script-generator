@@ -10,7 +10,7 @@ if api_key == "YOUR_API_KEY_HERE":
     st.error("براہ کرم اپنی API Key سیٹ کریں۔")
 else:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
     st.title("AI Reel Script Generator")
     topic = st.text_input("ویڈیو کا ٹاپک لکھیں:")
