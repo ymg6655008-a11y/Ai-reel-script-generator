@@ -6,8 +6,7 @@ api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 # मॉडल का नाम चेक करें (यही लिखें)
-model = genai.GenerativeModel('gemini-pro')
-
+model = genai.GenerativeModel('gemini-1.5-flash')
 st.title("AI Reel Script Generator")
 topic = st.text_input("ویڈیو کا ٹاپک لکھیں")
 
