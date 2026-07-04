@@ -3,7 +3,8 @@ import google.generativeai as genai
 
 # API Key کو یہاں سے ہٹانا ضروری ہے
 # آپ اسے Streamlit Cloud کی Settings (Secrets) میں بعد میں ڈالیں گے
-api_key = "YOUR_API_KEY_HERE"
+# API Key کو Streamlit secrets سے لیں
+api_key = st.secrets["GOOGLE_API_KEY"]
 
 if api_key == "YOUR_API_KEY_HERE":
     st.error("براہ کرم اپنی API Key سیٹ کریں۔")
