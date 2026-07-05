@@ -5,9 +5,8 @@ import google.generativeai as genai
 api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
-# ماڈل کو صحیح طریقے سے انیشیالائز کریں
-model = genai.GenerativeModel('gemini-1.5-flash')
-
+# ماڈل کو صحیح طریقے سے انیشیالائز کریں 
+model = genai.GenerativeModel('gemini-pro')
 st.title("AI Reel Script Generator")
 topic = st.text_input("ویڈیو کا ٹاپک لکھیں")
 
